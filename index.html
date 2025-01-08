@@ -1,202 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- ------------------ Font -----------------  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- ------------------- inter ------------------  -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Include Tailwind CSS via CDN -->
-    <link href="./assets/css/tailwind.min.css" rel="stylesheet">
+    <script src="./assets/js/tailwind.config.js"></script>
+    <link href="./assets/css/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="border-b border-zinc-400">
-        <div class="bg-black w-full py-2">
-            <div class="container mx-auto">
-                <div class="flex justify-end items-center">
-                    <div class="flex gap-3 grow justify-center">
-                        <p class="m-0 text-white">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-                        </p>
-                        <a href="" class="text-white font-semibold underline">ShopNow</a>
-                    </div>
-                    <div class="relative inline-block text-left">
-                        <select
-                            class="inline-flex w-full bg-black ring-0 justify-center gap-x-1.5 hover:ring-1 hover:ring-white rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus:outline-0">
-                            <option value="">English</option>
-                            <option value="">German</option>
-                            <option value="">Chines</option>
-                            <option value="">Urdu</option>
-                        </select>
-                    </div>
-                </div>
+      <div class="bg-black w-full py-2">
+        <div class="container mx-auto">
+          <div class="flex justify-end items-center">
+            <div class="flex gap-3 grow justify-center">
+              <p class="m-0 text-white">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+              <a href="#" class="text-white font-semibold underline">ShopNow</a>
             </div>
-        </div>
-        <div class="w-full">
-            <div class="container mx-auto">
-                <div class="flex items-center justify-between pt-10 pb-5">
-                    <a href="">
-                        <img src="./assets/public/images/Logo.png" alt="logo">
-                    </a>
-                    <nav>
-                        <ul class="list-none flex items-center gap-10">
-                            <li>
-                                <a href="" class="text-base border-b border-transparent hover:border-black">Home</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-base border-b border-transparent hover:border-black">Contact</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-base border-b border-transparent hover:border-black">About</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-base border-b border-transparent hover:border-black">Sign Up</a>
-                            </li>
-                        </ul>
-
-                    </nav>
-                    <div class="flex gap-10 items-center">
-                        <div class="relative flex gap-10 bg-zinc-200 py-2 px-3 rounded">
-                            <input type="text"
-                                class="placeholder:text-Stone-300 placeholder:text-xs block bg-transparent w-full pl-3 text-sm focus:outline-none focus:border-0 focus:ring-0"
-                                placeholder="What are you looking for?">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                            </svg>
-                        </span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                            </svg>
-                        </span>
-                    </div>
-                </div>
+            <div class="relative inline-block text-left">
+              <select
+                class="inline-flex w-full bg-black ring-0 justify-center gap-x-1.5 hover:ring-1 hover:ring-white rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus:outline-0"
+              >
+                <option value="">English</option>
+                <option value="">German</option>
+                <option value="">Chines</option>
+                <option value="">Urdu</option>
+              </select>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="w-full">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between pt-10 pb-5">
+            <a href="#">
+              <img src="./assets/public/images/Logo.png" alt="logo" />
+            </a>
+            <nav>
+              <ul class="list-none flex items-center gap-10">
+                <li>
+                  <a href="#" class="text-base border-b border-transparent hover:border-black">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-base border-b border-transparent hover:border-black">Contact</a>
+                </li>
+                <li>
+                  <a href="#" class="text-base border-b border-transparent hover:border-black">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-base border-b border-transparent hover:border-black">Sign Up</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex gap-10 items-center">
+              <div class="relative flex gap-10 bg-zinc-200 py-2 px-3 rounded">
+                <input
+                  type="text"
+                  class="placeholder:text-Stone-300 placeholder:text-xs block bg-transparent w-full pl-3 text-sm focus:outline-none focus:border-0 focus:ring-0"
+                  placeholder="What are you looking for?"
+                />
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                  />
+                </svg>
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section>
-            <div class="container mx-auto">
-                <div class="flex gap-10">
-                    <div class="w-1/4 border-r border-zinc-400">
-                        <ul>
-                            <li class="flex justify-between items-center">
-                                <a href="">Woman’s Fashion</a>
-                                <span class="text-xm text-black">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                                    </svg>
-                                </span>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="w-3/4">
-                        <div id="carouselExampleCaptions" class="relative" data-twe-carousel-init
-                            data-twe-ride="carousel">
-                            <!--Carousel indicators-->
-                            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-                                data-twe-carousel-indicators>
-                                <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="0"
-                                    data-twe-carousel-active class="mx-[3px] box-content h-[10px] w-[10px] bg-black"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="1"
-                                    class="mx-[3px] box-content h-[10px] w-[10px] bg-black"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="2"
-                                    class="mx-[3px] box-content h-[10px] w-[10px] bg-black"
-                                    aria-label="Slide 3"></button>
-                            </div>
-
-                            <!--Carousel items-->
-                            <div
-                                class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                                <!--First item-->
-                                <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                                    data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-                                        class="block w-full" alt="..." />
-                                    <div
-                                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                                        <h5 class="text-xl">First slide label</h5>
-                                        <p>
-                                            Some representative placeholder content for the first slide.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--Second item-->
-                                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                                    data-twe-carousel-item style="backface-visibility: hidden">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-                                        class="block w-full" alt="..." />
-                                    <div
-                                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                                        <h5 class="text-xl">Second slide label</h5>
-                                        <p>
-                                            Some representative placeholder content for the second slide.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--Third item-->
-                                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                                    data-twe-carousel-item style="backface-visibility: hidden">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-                                        class="block w-full" alt="..." />
-                                    <div
-                                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                                        <h5 class="text-xl">Third slide label</h5>
-                                        <p>
-                                            Some representative placeholder content for the third slide.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+      <section>
+        <div class="container mx-auto">
+          <div class="flex gap-10 h-[420px]">
+            <div class="w-1/4 border-r border-zinc-400 pt-10">
+              <ul
+                class="pr-5 h-full overflow-y-auto [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-red-400 [&::-webkit-scrollbar-thumb]:bg-red-700"
+              >
+                <li id="womenFashion" class="flex justify-between items-center pb-4 hover:text-red-600">
+                  <a href="#" class="text-base hover:text-red-600">Woman’s Fashion</a>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </span>
+                </li>
+                <div id="womenFashionDropdown" class="hidden bg-white p-4 rounded-md mb-5">
+                  <ul>
+                    <li class="pb-4 womenDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Clothes</a>
+                    </li>
+                    <li class="pb-4 womenDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Shoes</a>
+                    </li>
+                    <li class="pb-4 womenDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Beg</a>
+                    </li>
+                    <li class="pb-4 womenDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Jewellery</a>
+                    </li>
+                  </ul>
+                </div>
+                <li id="menFashion" class="flex justify-between items-center pb-4 hover:text-red-600">
+                  <a href="#" class="text-base hover:text-red-600">Men’s Fashion</a>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </span>
+                </li>
+                <div id="menFashionDropdown" class="hidden bg-white p-4 rounded-md mb-5">
+                  <ul>
+                    <li class="pb-4 menDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Clothes</a>
+                    </li>
+                    <li class="pb-4 menDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Shoes</a>
+                    </li>
+                    <li class="pb-4 menDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Beg</a>
+                    </li>
+                    <li class="pb-4 menDropdown-item">
+                      <a href="#" class="text-base hover:text-red-600">Jewellery</a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Electronics</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Home & Lifestyle</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Medicine</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Sports & Outdoor</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Baby’s & Toys</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Groceries & Pets</a>
+                </li>
+                <li class="flex justify-between items-center pb-4">
+                  <a href="#" class="text-base hover:text-red-600">Health & Beauty</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-3/4 pt-10 h-[420px]">
+              <div id="carouselExampleCaptions" class="relative h-full" data-twe-carousel-init data-twe-ride="carousel">
+                <!--Carousel indicators-->
+                <div
+                  class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                  data-twe-carousel-indicators
+                >
+                  <button
+                    type="button"
+                    data-twe-target="#carouselExampleCaptions"
+                    data-twe-slide-to="0"
+                    data-twe-carousel-active
+                    class="heroSliderBtn mx-[3px] box-content h-[10px] w-[10px] rounded-full bg-stone-500"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-twe-target="#carouselExampleCaptions"
+                    data-twe-slide-to="1"
+                    class="heroSliderBtn mx-[3px] box-content h-[10px] w-[10px] rounded-full bg-stone-500"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-twe-target="#carouselExampleCaptions"
+                    data-twe-slide-to="2"
+                    class="heroSliderBtn mx-[3px] box-content h-[10px] w-[10px] rounded-full bg-stone-500"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
 
+                <!--Carousel items-->
+                <div class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']">
+                  <!--First item-->
+                  <div
+                    class="relative h-[420px] float-left -mr-[100%] w-full bg-black transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-active
+                    data-twe-carousel-item
+                    style="backface-visibility: hidden"
+                  >
+                    <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                      <h5 class="text-xl">First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <!--Second item-->
+                  <div
+                    class="relative h-[420px] float-left -mr-[100%] hidden w-full bg-black transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-item
+                    style="backface-visibility: hidden"
+                  >
+                    <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                      <h5 class="text-xl">Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <!--Third item-->
+                  <div
+                    class="relative h-[420px] float-left -mr-[100%] hidden w-full bg-black transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-item
+                    style="backface-visibility: hidden"
+                  >
+                    <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                      <h5 class="text-xl">Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-
-
 
     <!-- -------------- jquery start --------------  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
     <!-- ----------------- mian js ---------------  -->
     <script src="./assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
