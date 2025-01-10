@@ -1,15 +1,40 @@
+// ------------------------ navbar hambarger --------------
+
+$(document).ready(function(){
+  $("#hamburger").click(function(){
+    $(".headerNavBar").toggleClass("translate-x-full");
+  })
+})
+$(document).ready(function(){
+  $("#headerNavClose").click(function(){
+    $(".headerNavBar").toggleClass("translate-x-full");
+  })
+})
+
+// ------------------------ Hero side bar --------------
+
+$(document).ready(function(){
+  $("#heroSideBar").click(function(){
+    $(".heroSideBar").toggleClass("hidden");
+  })
+})
+
+// --------------- banner dropdown ----------------
 $(document).ready(function () {
   $("#womenFashion").click(function () {
     $("#womenFashionDropdown").toggleClass("hidden");
+    $(".womenFashionIcon").toggleClass("rotate-90");
   });
-
+  
   $(".womenDropdown-item").click(function () {
     $("#womenFashionDropdown").addClass("hidden");
   });
 });
+
 $(document).ready(function () {
   $("#menFashion").click(function () {
     $("#menFashionDropdown").toggleClass("hidden");
+    $(".menFashionIcon").toggleClass("rotate-90");
   });
 
   $(".menDropdown-item").click(function () {
@@ -108,21 +133,27 @@ var mySwiper = new Swiper('.browserCategory .browserCategory-container', {
     prevEl: '.category-button-prev',
   },
   breakpoints: {
-    0: {
+   
+
+    425: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
-    414: {
+    640: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
     768: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
     992: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+    1250: {
       slidesPerView: 6,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   }
 })
